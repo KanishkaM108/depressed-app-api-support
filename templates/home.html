@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Depressed Person Support</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h2>Depressed Person Support</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/counselor/connect">Counselor</a></li>
+            <li><a href="/notifications/reminders">Reminders</a></li>
+        </ul>
+        <div class="auth-links">
+            <a href="/users/profile?user_id=1">Profile</a>
+            <a href="/users/login">Login</a>
+            <a href="/users/register">Register</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <div class="welcome-section">
+            <h1>Welcome to Depressed Person Support</h1>
+            <p>Your mental well-being matters. Find support, resources, and tools to help you manage your mental health.</p>
+        </div>
+
+        <div class="feature-section">
+            <!-- Mood Tracking -->
+            <div class="feature">
+                <img src="{{ url_for('static', filename='images/mood_tracker.webp') }}" alt="Mood Tracking">
+                <h3><a href="/mood">Record Your Mood</a></h3>
+                <p>Track your daily moods and thoughts to gain insights into your mental health patterns.</p>
+            </div>
+
+            <!-- Mental Health Resources -->
+            <div class="feature">
+                <img src="{{ url_for('static', filename='images/resources.jpg') }}" alt="Mental Health Resources">
+                <h3><a href="/resources">Mental Health Resources</a></h3>
+                <p>Explore articles, coping strategies, and videos that can help you manage stress and anxiety.</p>
+            </div>
+
+            <!-- Counselor Support -->
+            <div class="feature">
+                <img src="{{ url_for('static', filename='images/counselor_support.jpg') }}" alt="Counselor Support">
+                <h3><a href="/counselor/connect">Connect with a Counselor</a></h3>
+                <p>Speak with a certified counselor to get support and guidance during challenging times.</p>
+            </div>
+
+            <!-- Set Reminders -->
+            <div class="feature">
+                <img src="{{ url_for('static', filename='images/reminders.jpg') }}" alt="Set Reminders">
+                <h3><a href="/notifications/reminders">Set Reminders</a></h3>
+                <p>Schedule reminders for self-care practices like meditation, journaling, or medication.</p>
+            </div>
+        </div>
+
+        <!-- Crisis Support -->
+        <div class="crisis-support">
+            <p>If you need urgent help, please <a href="/crisis/help" class="crisis-link">click here</a> to request immediate crisis support.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Depressed Person Support. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

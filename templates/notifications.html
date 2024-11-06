@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Reminders</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="form-container">
+    <div class="form-box">
+        <h1>Set Reminders</h1>
+        <form method="POST">
+            <label for="reminder">Reminder Type:</label>
+            <select id="reminder" name="reminder_type" required>
+                <option value="meditation">Meditation</option>
+                <option value="journaling">Journaling</option>
+                <option value="medication">Medication</option>
+            </select>
+            <br><br>
+            <label for="time">Reminder Time:</label>
+            <input type="time" id="time" name="time" required>
+            <br><br>
+            <button type="submit">Set Reminder</button>
+        </form>
+    </div>
+</body>
+</html>
+

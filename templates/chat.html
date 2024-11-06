@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counselor Chat</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="chat-container">
+    <div class="chat-box">
+        <h2>Counselor Chat</h2>
+        <div class="chat-window">
+            <!-- This is where the chat messages will appear -->
+            <div id="chat-messages">
+                <p class="message counselor">Hello, how can I assist you today?</p>
+            </div>
+        </div>
+        <form class="chat-form" action="#">
+            <input type="text" id="message-input" placeholder="Type your message...">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Depressed Person Support</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="profile-container">
+    <div class="profile-box">
+        <h1>User Profile</h1>
+        <div class="profile-info">
+            <p><strong>Name:</strong> {{ user.name }}</p>
+            <p><strong>Email:</strong> {{ user.email }}</p>
+        </div>
+
+        <div class="profile-section">
+            <h2>Mental Health History</h2>
+            <ul>
+                {% if user.mental_health_history %}
+                    {% for entry in user.mental_health_history %}
+                    <li>{{ entry }}</li>
+                    {% endfor %}
+                {% else %}
+                    <p>No history available</p>
+                {% endif %}
+            </ul>
+        </div>
+
+        <div class="profile-section">
+            <h2>Mood Tracking</h2>
+            <ul>
+                {% if user.mood_tracking %}
+                    {% for mood in user.mood_tracking %}
+                    <li>
+                        <strong>Date:</strong> {{ mood.timestamp }}<br>
+                        <strong>Mood:</strong> {{ mood.mood }}<br>
+                        <strong>Thoughts:</strong> {{ mood.thoughts }}
+                    </li>
+                    {% endfor %}
+                {% else %}
+                    <p>No mood tracking data available</p>
+                {% endif %}
+            </ul>
+        </div>
+
+        <a class="button-link" href="/">Back to Home</a>
+    </div>
+</body>
+</html>

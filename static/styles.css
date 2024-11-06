@@ -1,0 +1,607 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #2c3e50;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo h2 {
+    margin: 0;
+    color: #ecf0f1;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .auth-links {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-links a {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.auth-links a:hover {
+    background-color: #2980b9;
+}
+
+/* Home Page Styles */
+.main-container {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    color: #7f8c8d;
+}
+
+.feature-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.feature {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.feature h3 {
+    margin: 15px 0;
+}
+
+.feature p {
+    color: #7f8c8d;
+}
+
+/* Form Page Styling (e.g., Set Reminders, Record Your Mood) */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: rgba(255, 255, 255, 0.7); /* Light background with transparency */
+}
+
+.form-box {
+    background-color: #f4f6f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
+    text-align: center;
+    width: 400px; /* Set form width */
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form select, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Mood Form Page Specific Styling */
+.mood-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e3f2fd; /* Light blue background for mood page */
+}
+
+.mood-form-box {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    text-align: center;
+    width: 400px;
+}
+
+form label {
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form select, form textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Success Page Styling */
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #e8f5e9; /* Light green background for success message */
+}
+
+.success-box {
+    background-color: #ffffff; /* White background for success box */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    text-align: center;
+    width: 400px; /* Fixed width */
+}
+
+.success-box h1 {
+    color: #4caf50; /* Green color for success message */
+    margin-bottom: 20px;
+}
+
+.button-link {
+    padding: 10px 20px;
+    background-color: #3498db; /* Blue background for the button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Crisis Support Section */
+.crisis-link {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.crisis-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Mental Health Resources Styling */
+.resources-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f0f4c3; /* Light greenish-yellow background */
+}
+
+.resources-box {
+    background-color: #ffffff; /* White background for content box */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    text-align: left; /* Align text to the left */
+    width: 400px; /* Fixed width for the content box */
+}
+
+.resources-box h1 {
+    text-align: center; /* Center the title */
+    color: #3498db; /* Consistent blue color for title */
+    margin-bottom: 20px;
+}
+
+.resources-box ul {
+    list-style-type: disc; /* Bullet points */
+    margin-left: 20px;
+}
+
+.resources-box a {
+    color: #6a1b9a; /* Purple link color */
+    text-decoration: none;
+}
+
+.resources-box a:hover {
+    text-decoration: underline;
+    color: #9c27b0; /* Slightly lighter purple on hover */
+}
+
+/* Resource Detail Styling */
+.resource-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e3f2fd; /* Light blue background */
+}
+
+.resource-detail-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+    text-align: left;
+    width: 500px;
+}
+
+.resource-detail-box h1 {
+    color: #3498db; /* Consistent blue color for title */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.resource-detail-box p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.resource-detail-box ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Counselor Page Styling */
+.counselor-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f6f9;
+}
+
+.counselor-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.counselor-box h1 {
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.counselor-box p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* Chat Interface Styling */
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e3f2fd;
+}
+
+.chat-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+.chat-box h2 {
+    color: #3498db;
+    text-align: center;
+}
+
+.chat-window {
+    background-color: #f4f6f9;
+    border: 1px solid #ddd;
+    height: 300px;
+    padding: 10px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+#chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 75%;
+}
+
+.counselor {
+    background-color: #3498db;
+    color: white;
+    align-self: flex-start;
+}
+
+.user {
+    background-color: #e3f2fd;
+    color: #333;
+    align-self: flex-end;
+}
+
+.chat-form {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-form input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.chat-form button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.chat-form button:hover {
+    background-color: #2980b9;
+}
+
+/* Success Page Styling */
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e8f5e9;
+}
+
+.success-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.success-box h1 {
+    color: #4caf50;
+    margin-bottom: 20px;
+}
+
+.success-box p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.button-link {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #2980b9;
+}
+
+/* Form Styling for Set Reminders */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f6f9;
+}
+
+.form-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Crisis Help Styling */
+.crisis-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fef4f4; /* Light pink background for crisis */
+}
+
+.crisis-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+.crisis-box h1 {
+    color: #e74c3c; /* Red color for urgency */
+    margin-bottom: 20px;
+}
+
+.crisis-box p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.crisis-button {
+    padding: 12px 25px;
+    background-color: #e74c3c; /* Urgent red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.crisis-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .page-content {
+        width: 90%;
+    }
+
+    form input, form select, form textarea {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .nav-links, .navbar .auth-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

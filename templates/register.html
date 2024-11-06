@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Depressed Person Support</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Register New User</h1>
+        <form action="/users/register" method="POST">
+            <input type="text" name="name" placeholder="Enter your name" required><br>
+            <input type="email" name="email" placeholder="Enter your email" required><br>
+            <input type="password" name="password" placeholder="Enter your password" required><br>
+            <input type="submit" value="Register">
+        </form>
+        <a href="/users/login">Already have an account? Login here</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood History - Depressed Person Support</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Mood History</h1>
+        <ul>
+            {% for mood in moods %}
+            <li>
+                <strong>Date:</strong> {{ mood.timestamp }} <br>
+                <strong>Mood:</strong> {{ mood.mood }} <br>
+                <strong>Thoughts:</strong> {{ mood.thoughts }}
+            </li>
+            <hr>
+            {% endfor %}
+        </ul>
+        <a href="/mood">Back to Mood Tracking</a>
+    </div>
+</body>
+</html>

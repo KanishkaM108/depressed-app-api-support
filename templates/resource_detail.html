@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ resource.title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="resource-detail-container">
+    <div class="resource-detail-box">
+        <h1>{{ resource.title }}</h1>
+        <p>{{ resource.content }}</p>
+        <p>
+            Coping strategies are techniques that individuals use to manage stress, anxiety, and depression. 
+            Here are some key strategies that can help:
+        </p>
+        <ul>
+            <li><strong>Mindfulness Meditation:</strong> Practicing mindfulness can help reduce anxiety by grounding you in the present moment.</li>
+            <li><strong>Physical Activity:</strong> Exercise is a natural mood booster that can reduce symptoms of depression.</li>
+            <li><strong>Social Support:</strong> Staying connected with friends and loved ones can improve mental well-being.</li>
+            <li><strong>Journaling:</strong> Writing down your thoughts and feelings can help process emotions in a healthy way.</li>
+            <li><strong>Breathing Exercises:</strong> Deep breathing exercises can reduce stress and bring calmness in tense situations.</li>
+        </ul>
+        <div class="button-group">
+            <a href="/resources" class="button-link">Back to Resources</a>
+            <a href="/" class="button-link">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
